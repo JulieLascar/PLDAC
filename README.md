@@ -6,8 +6,8 @@
  Executer dans cet ordre :
  
  extraction_histo.py
- cible_python.py
- pre_process_twitter1.py
- classif_allocine.py
+ cible_python.py\n
+ pre_process_twitter1.py\n
+ classif_allocine.py\n
  classif_twitter.py  --> trop long
  
