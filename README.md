@@ -5,9 +5,9 @@
  **Pour les fichiers dans prog_J:**
  Executer dans cet ordre :
  
- extraction_histo.py
- cible_python.py\n
- pre_process_twitter1.py\n
- classif_allocine.py\n
+ extraction_histo.py  
+ cible_python.py  
+ pre_process_twitter1.py  
+ classif_allocine.py  
  classif_twitter.py  --> trop long
  
