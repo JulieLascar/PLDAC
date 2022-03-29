@@ -21,13 +21,13 @@ def subGraph(G, max):
     print(do)
     return Gp
 
-Gp = subGraph(G, 1000)
+#Gp = subGraph(G, 1000)
 
-Gpu = Gp.to_undirected()
+Gu = G.to_undirected()
 
 started = time.time()
 
-partition = community_louvain.best_partition(Gpu)
+partition = community_louvain.best_partition(Gu)
 
 ended = time.time()
 print(ended - started) 
