@@ -1,10 +1,10 @@
 import networkx as nx
 import community as community_louvain
-import pickle
+import pickle # ou pickle5 selon la version de python
 import time
 import numpy as np
 
-G = pickle.load(open('graph.gpickle', 'rb'))
+G = pickle.load(open('graph_.gpickle', 'rb'))
 
 def subGraph(G, max):
     Gp = nx.MultiDiGraph()
@@ -23,12 +23,12 @@ def subGraph(G, max):
 
 #Gp = subGraph(G, 1000)
 
-Gu = G.to_undirected()
+G = G.to_undirected()
 
 started = time.time()
 
-partition = community_louvain.best_partition(Gu)
+partition = community_louvain.best_partition(G)
 
 ended = time.time()
 print(ended - started) 
-pickle.dump(partition, open('partition.p', 'wb'))
+pickle.dump(partition, open('partition_.p', 'wb'))
