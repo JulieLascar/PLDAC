@@ -16,7 +16,7 @@ small_community_ += str(small_community[-1]) + ')'
 connection_params = {
     'host' : 'localhost',
     'user' : 'root',
-    'password' : 'K@wa11',
+    'password' : '<password>',
     'database' : 'pldac'
 }
 
